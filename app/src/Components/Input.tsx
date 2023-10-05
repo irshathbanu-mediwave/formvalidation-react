@@ -12,7 +12,7 @@ class InputElement extends React.Component<InputElementProps> {
   render() {
     const { type, placeholder, onChange, id, name, label } = this.props;
     return (
-      <div>
+      <div id="Input-conatiner">
         <label>{label}</label>
         <input
           type={type}
