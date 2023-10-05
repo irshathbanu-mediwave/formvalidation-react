@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Input, Button } from "./Components";
 import "./App.css";
+import { InputElement, ButtonElement } from "./Components";
 function App() {
   const [formdata, setFormdata] = useState({
     title: "",
@@ -21,37 +21,41 @@ function App() {
   return (
     <>
       <div>
-        <Input
-          label="Movie Name"
+        <InputElement
+          label="Moviename"
           type="text"
           placeholder="title"
           name="title"
+          id="title"
           onChange={onChange}
         />
-        <Input
+        <InputElement
           label="Discription"
           type="text"
           placeholder="discription"
           name="discription"
+          id="title"
           onChange={onChange}
         />
-        <Input
+        <InputElement
           label="Image Url"
           type="text"
           placeholder="url"
           name="url"
+          id="url"
           onChange={onChange}
         />
-        <Input
+        <InputElement
           label="Rating"
           type="number"
           placeholder="rating"
           name="rating"
+          id="url"
           onChange={onChange}
         />
       </div>
       <div>
-        <Button onClick={onClick} text="Submit" />
+        <ButtonElement onClick={onClick} label="Submit" id="Submitbtn" />
       </div>
     </>
   );

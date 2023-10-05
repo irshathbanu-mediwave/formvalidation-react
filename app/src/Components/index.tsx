@@ -1,4 +1,3 @@
-import Input from "./Input";
-import Button from "./Button";
-
-export { Input, Button };
+import InputElement from "./Input";
+import ButtonElement from "./Button";
+export { InputElement, ButtonElement };
