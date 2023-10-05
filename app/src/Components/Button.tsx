@@ -4,11 +4,9 @@ interface buttonProps {
 }
 function Button({ text, onClick }: buttonProps) {
   return (
-    <>
-      <button type="submit" onClick={onClick}>
-        {text}
-      </button>
-    </>
+    <button type="submit" onClick={onClick}>
+      {text}
+    </button>
   );
 }
 export default Button;

@@ -8,7 +8,7 @@ interface inputProps {
 }
 function Input({ label, type, name, placeholder, onChange }: inputProps) {
   return (
-    <>
+    <div>
       <label>{label}</label>
       <input
         type={type}
@@ -16,7 +16,7 @@ function Input({ label, type, name, placeholder, onChange }: inputProps) {
         name={name}
         onChange={onChange}
       />
-    </>
+    </div>
   );
 }
 export default Input;
