@@ -6,6 +6,7 @@ function Input(props) {
       <label>{label}</label>
       <input type={type} placeholder={placeholder} name={name} onChange={onChange} />
     </div>
+  
   );
 }
 export default Input;
