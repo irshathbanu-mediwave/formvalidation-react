@@ -34,10 +34,13 @@ function App() {
   });
 
   return (
-    <>
-      <div>
+    <div id="Whole-content">
+      <div id="Conatiner">
         <form onSubmit={formik.handleSubmit}>
-          <label htmlFor="title">Movie Name</label>
+         <div><h2 id="form">Movie-Form</h2></div>
+         <div >
+           <span class="fa fa-user"></span>
+          <label htmlFor="title">Movie Name:</label>
           <input
             type="text"
             placeholder="title"
@@ -46,9 +49,10 @@ function App() {
             onChange={formik.handleChange}
             value={formik.values.title}
           />
-          {formik.errors.title && <div>{formik.errors.title}</div>}
-
-          <label htmlFor="description">Description</label>
+          </div>
+          {formik.errors.title && <div id="error">{formik.errors.title}</div>}
+          <div>
+          <label htmlFor="description">Description:</label>
           <input
             type="text"
             placeholder="description"
@@ -57,9 +61,10 @@ function App() {
             onChange={formik.handleChange}
             value={formik.values.description}
           />
-          {formik.errors.description && <div>{formik.errors.description}</div>}
-
-          <label htmlFor="url">Image URL</label>
+          </div>
+          {formik.errors.description && <div id="error">{formik.errors.description}</div>}
+             <div>
+          <label htmlFor="url">Movie url:</label>
           <input
             type="text"
             placeholder="url"
@@ -68,9 +73,10 @@ function App() {
             onChange={formik.handleChange}
             value={formik.values.url}
           />
-          {formik.errors.url && <div>{formik.errors.url}</div>}
-
-          <label htmlFor="rating">Rating</label>
+          </div>
+          {formik.errors.url && <div id="error">{formik.errors.url}</div>}
+            <div>
+          <label htmlFor="rating">Rating:</label>
           <input
             type="number"
             placeholder="rating"
@@ -79,7 +85,8 @@ function App() {
             onChange={formik.handleChange}
             value={formik.values.rating}
           />
-          {formik.errors.rating && <div>{formik.errors.rating}</div>}
+          </div>
+          {formik.errors.rating && <div id="error">{formik.errors.rating}</div>}
 
           <button type="submit">Add Card</button>
               
@@ -91,7 +98,7 @@ function App() {
         <div id="card " key={index}>
           <h2>{movie.title}  </h2>
            <h2>{movie.description}  </h2>
-            <img  src={movie.url}/>
+            <img  src={movie.url} id="img"/>
              <h2>{movie.rating} </h2>
         </div>
 
@@ -101,7 +108,7 @@ function App() {
         </div> 
        )}
          
-    </>
+    </div>
   );
 
 }
