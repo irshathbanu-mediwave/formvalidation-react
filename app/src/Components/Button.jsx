@@ -1,10 +1,10 @@
 function Button(props) {
-  const { label, onClick, id } = props;
+  const { label, id, type } = props;
   return (
     <div id="Button-Container">
-    <button  type="submit"   id={id} onClick={onClick}>
-      {label}
-    </button>
+      <button type={type} id={id}>
+        {label}
+      </button>
     </div>
   );
 }
