@@ -1,10 +1,8 @@
 function Button(props) {
-  const { label, id, type } = props;
+  const { label, type } = props;
   return (
     <div id="Button-Container">
-      <button type={type} id={id}>
-        {label}
-      </button>
+      <button type={type}>{label}</button>
     </div>
   );
 }
